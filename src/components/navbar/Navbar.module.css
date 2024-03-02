@@ -1,0 +1,25 @@
+/* header {
+  margin-bottom: 6.4rem;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 2.4rem 0;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.items a:link,
+.items a:visited {
+  text-decoration: none;
+}
+
+.items a:hover,
+.items a:active {
+  color: var(--clr-red);
+}

@@ -12,7 +12,9 @@ Default: 400
 
 
 - Line heights
-Default: 1.5
+Default: 1.4
+tight text:1.1
+tighter:1
 
 
 - Letter spacing
@@ -51,12 +53,17 @@ Default: 1.5
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bg-white: #fffefe;
+  --clr-darkBlue: #11303e;
+  --clr-red: #e3393c;
+  --clr-lightRed:#e64d50
+  --clr-teal: #056e9a;
 }
 
 * {
@@ -67,6 +74,11 @@ Default: 1.5
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--clr-darkBlue);
 }
 
 .container {
@@ -86,6 +98,9 @@ html {
 
 .grid-column--3 {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid-column--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-center--v {
