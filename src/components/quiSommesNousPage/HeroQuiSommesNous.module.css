@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+.title {
+  font-size: 4.4rem;
+  font-weight: 500;
+  color: var(--clr-red);
+  text-transform: uppercase;
+}
+
+.image {
+  height: 40rem;
+}

@@ -62,7 +62,7 @@ tighter:1
   --bg-white: #ebebf5;
   --clr-darkBlue: #11303e;
   --clr-red: #e3393c;
-  --clr-lightRed:#e64d50
+  --clr-lightRed: #e64d50;
   --clr-teal: #056e9a;
 }
 
@@ -90,14 +90,11 @@ body {
 .grid {
   display: grid;
   column-gap: 6.4rem;
-
 }
 
 .grid-column--2 {
   grid-template-columns: repeat(2, 1fr);
 }
-
-
 
 .grid-column--3 {
   grid-template-columns: repeat(3, 1fr);
@@ -110,8 +107,8 @@ body {
 .grid-center--v {
   align-items: center;
 }
-.grid-row--gap{
-row-gap:3.2rem
+.grid-row--gap {
+  row-gap: 3.2rem;
 }
 
 /* ========================================================================= */

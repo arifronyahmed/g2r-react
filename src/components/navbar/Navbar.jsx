@@ -5,8 +5,10 @@ export default function Navbar() {
   return (
     <header>
       <div className={`${styles.navbar} container`}>
-        <div className={styles.logo}>
-          <Link to="/">Logo</Link>
+        <div>
+          <Link to="/">
+            <img src="/G2R-LOGO.png" alt="G2r Logo" className={styles.logo} />
+          </Link>
         </div>
         <nav className={styles.nav}>
           <ul className={styles.items}>

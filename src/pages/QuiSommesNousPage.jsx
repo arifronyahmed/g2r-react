@@ -1,3 +1,13 @@
+import AboutUs from "../components/quiSommesNousPage/AboutUs";
+import Centers from "../components/quiSommesNousPage/Centers";
+import HeroQuiSommesNous from "../components/quiSommesNousPage/HeroQuiSommesNous";
+
 export default function QuiSommesNousPage() {
-  return <div>QuiSommesNousPage</div>;
+  return (
+    <>
+      <HeroQuiSommesNous />
+      <AboutUs />
+      <Centers />
+    </>
+  );
 }

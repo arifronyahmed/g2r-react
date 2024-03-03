@@ -1,0 +1,23 @@
+.text_box {
+  margin-bottom: 5.2rem;
+}
+
+.title {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+.text_sub {
+  color: var(--clr-lightRed);
+  font-weight: 600;
+  text-decoration: underline;
+}
