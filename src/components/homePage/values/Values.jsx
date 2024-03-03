@@ -6,7 +6,6 @@ import {
 } from "react-icons/fa";
 import styles from "./Values.module.css";
 
-
 const data = [
   {
     icon: <FaPeopleCarry />,
@@ -30,18 +29,18 @@ const data = [
   },
 ];
 
-
-
 export default function Values() {
   return (
-    <div className="container grid grid-column--4">
-      {data.map((item, index) => (
-        <div key={index} className={styles.card}>
-          <div className={styles.icon}>{item.icon}</div>
-          <div className={styles.title}>{item.title}</div>
-          <p className={styles.text}>{item.text}</p>
-        </div>
-      ))}
-    </div>
+    <section className={styles.values}>
+      <div className="container grid grid-column--4">
+        {data.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.icon}>{item.icon}</div>
+            <div className={styles.title}>{item.title}</div>
+            <p className={styles.text}>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -59,7 +59,7 @@ tighter:1
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bg-white: #fffefe;
+  --bg-white: #ebebf5;
   --clr-darkBlue: #11303e;
   --clr-red: #e3393c;
   --clr-lightRed:#e64d50
@@ -97,6 +97,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+
+
 .grid-column--3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -107,6 +109,9 @@ body {
 
 .grid-center--v {
   align-items: center;
+}
+.grid-row--gap{
+row-gap:3.2rem
 }
 
 /* ========================================================================= */

@@ -1,3 +1,7 @@
+.values {
+  padding: 6.2rem 0;
+}
+
 .card {
   display: flex;
   justify-content: center;

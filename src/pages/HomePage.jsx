@@ -1,13 +1,17 @@
-import Hero from "../components/hero/Hero";
-import StartInfo from "../components/startInfo/StartInfo";
-import Values from "../components/values/Values";
+import Hero from "../components/homePage/hero/Hero";
+import Partners from "../components/homePage/partners/Partners";
+import StartInfo from "../components/homePage/startInfo/StartInfo";
+import Stats from "../components/homePage/stats/Stats";
+import Values from "../components/homePage/values/Values";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <Stats />
       <StartInfo />
       <Values />
+      <Partners />
     </>
   );
 }
