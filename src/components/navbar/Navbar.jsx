@@ -13,10 +13,13 @@ export default function Navbar() {
         <nav className={styles.nav}>
           <ul className={styles.items}>
             <li>
-              <Link to="/contactez-nous">Contactez Nous</Link>
+              <Link to="/qui-sommes-nous">Qui Sommes Nous?</Link>
             </li>
             <li>
-              <Link to="/qui-sommes-nous">Qui Sommes Nous?</Link>
+              <Link to="/formations">Formations</Link>
+            </li>
+            <li>
+              <Link to="/contactez-nous">Contactez Nous</Link>
             </li>
           </ul>
         </nav>

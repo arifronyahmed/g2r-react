@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import AppLayout from "./AppLayout";
 import QuiSommesNousPage from "./pages/QuiSommesNousPage";
 import ContactezNousPage from "./pages/ContactezNousPage";
+import FormationPage from "./pages/FormationPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/contactez-nous",
         element: <ContactezNousPage />,
+      },
+      {
+        path: "/formations",
+        element: <FormationPage />,
       },
     ],
   },
