@@ -64,6 +64,9 @@ tighter:1
   --clr-red: #e3393c;
   --clr-lightRed: #e64d50;
   --clr-teal: #056e9a;
+
+  --card-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.22) 0px 3px 6px;
 }
 
 * {
@@ -89,8 +92,23 @@ body {
 
 .grid {
   display: grid;
+}
+.grid-gap--hlg {
   column-gap: 6.4rem;
 }
+
+.grid-gap--hsm {
+  column-gap: 3.2rem;
+}
+
+.grid-gap--vsm {
+  row-gap: 3.2rem;
+}
+
+.grid-gap--vlg {
+  row-gap: 6.4rem;
+}
+
 
 .grid-column--2 {
   grid-template-columns: repeat(2, 1fr);

@@ -1,3 +1,11 @@
+import FormationCardGrid from "../components/formatioinPage/FormationCardGrid";
+import FormationHero from "../components/formatioinPage/FormationHero";
+
 export default function FormationPage() {
-  return <div>FormationPage</div>;
+  return (
+    <>
+      <FormationHero />
+      <FormationCardGrid />
+    </>
+  );
 }

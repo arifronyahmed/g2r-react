@@ -1,0 +1,46 @@
+.formation_hero {
+  margin-bottom: 6.4rem;
+}
+
+.title_box {
+  margin-bottom: 9.6rem;
+}
+
+.title {
+  text-transform: capitalize;
+  line-height: 1.1;
+  font-size: 5.2rem;
+  color: var(--clr-red);
+  font-weight: 700;
+}
+
+.subtitle {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formation_box {
+  background-color: #cde2eb;
+  padding: 2.4rem 1.2rem;
+  box-shadow: var(--card-shadow);
+  margin: 0 2rem;
+}
+
+.formation_title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #888;
+}
+
+.formation_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
