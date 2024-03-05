@@ -1,3 +1,7 @@
+.partners {
+  margin-bottom: 12.8rem;
+}
+
 .title {
   text-align: center;
   font-size: 3rem;
@@ -13,6 +17,4 @@
   height: 7.4rem;
   filter: brightness(0);
   opacity: 60%;
-  
-
 }

@@ -94,7 +94,7 @@ export default function Centers() {
     <section>
       <div className="container">
         <div className={styles.title}>Nos centres en Île-de-France :</div>
-        <div className="grid grid-column--4">
+        <div className="grid grid-column--4 grid-gap--hlg grid-gap--vlg">
           {centerData.map((center) => (
             <div key={center.id} className={styles.card}>
               <img

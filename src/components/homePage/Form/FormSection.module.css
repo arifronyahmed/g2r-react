@@ -1,0 +1,30 @@
+.title {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.subtitle {
+  width: 50%;
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.leftBox_item {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.item_title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.item_subtitle {
+  font-size: 1.6rem;
+}

@@ -19,7 +19,7 @@ export default function StartInfo() {
           </div>
         </div>
 
-        <div className="grid grid-column--4">
+        <div className="grid grid-column--4 grid-gap--hlg grid-gap--vlg">
           {data.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div>

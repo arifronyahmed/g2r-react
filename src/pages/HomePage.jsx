@@ -1,3 +1,5 @@
+
+import FormSection from "../components/homePage/Form/FormSection";
 import Hero from "../components/homePage/hero/Hero";
 import Partners from "../components/homePage/partners/Partners";
 import StartInfo from "../components/homePage/startInfo/StartInfo";
@@ -12,6 +14,7 @@ export default function HomePage() {
       <StartInfo />
       <Values />
       <Partners />
+      <FormSection/>
     </>
   );
 }

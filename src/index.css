@@ -43,7 +43,7 @@ tighter:1
 --- 07 WHITESPACE
 
 - Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 148
 
 
 
@@ -59,7 +59,7 @@ tighter:1
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bg-white: #ebebf5;
+  --bg-white: #fff;
   --clr-darkBlue: #11303e;
   --clr-red: #e3393c;
   --clr-lightRed: #e64d50;
@@ -109,7 +109,6 @@ body {
   row-gap: 6.4rem;
 }
 
-
 .grid-column--2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -119,15 +118,22 @@ body {
 }
 .grid-column--4 {
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 6.4rem;
+}
+
+.grid-row--2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-row--3 {
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid-center--v {
   align-items: center;
 }
-.grid-row--gap {
+
+/* .grid-row--gap {
   row-gap: 3.2rem;
-}
+} */
 
 /* ========================================================================= */
 /* ********************************Carousel******************************** */
