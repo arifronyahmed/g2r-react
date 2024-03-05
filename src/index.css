@@ -150,3 +150,20 @@ body {
   flex: 0 0 100%;
   max-width: 600px;
 }
+
+/* ========================================================================= */
+/* ********************************Button******************************** */
+/* ========================================================================= */
+
+.btn,
+.btn:link,
+.btn:visited {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  font-family: inherit;
+}
