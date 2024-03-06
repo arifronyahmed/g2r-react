@@ -1,13 +1,15 @@
+import Button from "../../ui/Button";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className="container grid grid-column--2">
-        <div className={styles.left}>
+        <div className={styles.leftBox}>
           <h1 className={styles.heading}>
-            Lécole Tech qui prend soin de votre avenir, où que vous soyez !
+            L'école Tech qui prend soin de votre avenir, où que vous soyez !
           </h1>
+          <Button className={"btn-primary"}>Explorer nos formations</Button>
         </div>
         <div className={styles.right}>
           <img

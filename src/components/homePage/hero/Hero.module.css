@@ -6,13 +6,22 @@
 }
 
 
+.leftBox{
+display: flex;
+flex-direction: column;
+
+}
+
+
+
 
 .heading {
   line-height: 1.1;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 4.4rem;
-  color: var(--clr-red);
-  font-weight: 400;
+  color: var(--clr-darkBlue);
+  font-weight: 700;
+  margin-bottom: 6.4rem;
 }
 
 .image {

@@ -61,6 +61,7 @@ tighter:1
   -moz-osx-font-smoothing: grayscale;
   --bg-white: #fff;
   --clr-darkBlue: #11303e;
+  --clr-lightBlue: #415965;
   --clr-red: #e3393c;
   --clr-lightRed: #e64d50;
   --clr-teal: #056e9a;
@@ -229,15 +230,49 @@ body {
 /* ********************************Button******************************** */
 /* ========================================================================= */
 
-.btn,
-.btn:link,
-.btn:visited {
+
+
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: transparent;
+  outline: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
   display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 1.6rem 3.2rem;
-  border: none;
-  font-family: inherit;
+  width: 50%;
+  border: 1px solid var(--clr-darkBlue);
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.btn-primary:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: var(--clr-darkBlue);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  color: #fff;
+}
+
+.btn-primary:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-primary:active {
+  top: 2px;
 }
