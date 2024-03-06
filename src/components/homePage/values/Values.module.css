@@ -4,13 +4,13 @@
 
 .card {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  gap: 2rem;
   padding: 1.4rem;
   flex-direction: column;
-  gap: 2.4rem;
 }
 .icon {
-  font-size: 9.8rem;
+  font-size: 8.6rem;
   color: #e64d50;
 }
 .title {

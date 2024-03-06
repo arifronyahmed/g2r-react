@@ -11,34 +11,34 @@ export default function FormationHero() {
           </div>
         </div>
 
-        <section className="grid grid-column--2">
+        <section>
           <div className={styles.formation_box}>
             <div className={styles.formation_title}>
               Nos formations diplômantes / certifiantes
             </div>
-            <div className={styles.formation_list}>
-              <div>#Concepteur Développeur d’Applications</div>
-              <div>#DevOps</div>
-              <div>#Technicien d'Assistance en Informatique</div>
-              <div>#Technicien Supérieur Systèmes & Réseaux</div>
-              <div>#Administrateur d'infrastructures sécurisées</div>
-              <div>#Assistant.e Commercial.e</div>
-              <div>#Formateur Pour Adultes</div>
-            </div>
-          </div>
-          <div className={styles.formation_box}>
-            <div className={styles.formation_title}>
-              Nos formations institutionnelles / professionnalisantes
-            </div>
-            <div className={styles.formation_list}>
-              <div>#Concepteur Développeur d’Applications</div>
-              <div>#DevOps</div>
-              <div>#Technicien d'Assistance en Informatique</div>
-              <div>#Technicien Supérieur Systèmes & Réseaux</div>
-              <div>#Administrateur d'infrastructures sécurisées</div>
-              <div>#Assistant.e Commercial.e</div>
-              <div>#Formateur Pour Adultes</div>
-            </div>
+            <ul className={styles.formation_list}>
+              <li>
+                <a>#DevOps</a>
+              </li>
+              <li>
+                <a>#Technicien d'Assistance en Informatique</a>
+              </li>
+              <li>
+                <a>#Concepteur Développeur d’Applications</a>
+              </li>
+              <li>
+                <a>#Technicien Supérieur Systèmes & Réseaux</a>
+              </li>
+              <li>
+                <a>#Administrateur d'infrastructures sécurisées</a>
+              </li>
+              <li>
+                <a>#Assistant.e Commercial.e</a>
+              </li>
+              <li>
+                <a>#Formateur Pour Adultes</a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>

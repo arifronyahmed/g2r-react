@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
         <div className={styles.right}>
           <img
-            src="/public/undraw_engineering_team_a7n2.svg"
+            src="undraw_educator_re_ju47.svg"
             alt="illustration of 3 people talking"
             className={styles.image}
           />

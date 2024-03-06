@@ -1,4 +1,7 @@
 .formation_hero {
+  display: flex;
+  align-items: center;
+  min-height: 95vh;
   margin-bottom: 6.4rem;
 }
 
@@ -19,28 +22,34 @@
   font-size: 2.4rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 .formation_box {
-  background-color: #cde2eb;
-  padding: 2.4rem 1.2rem;
-  box-shadow: var(--card-shadow);
-  margin: 0 2rem;
+  max-width: 70%;
+  padding: 2.4rem 0;
 }
 
 .formation_title {
-  font-size: 2rem;
+
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 3rem;
-  color: #888;
+  color: #666;
 }
 
 .formation_list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+.formation_list li {
+  cursor: pointer;
+  text-align: center;
+  background-color: #e5e4e2;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
 }
