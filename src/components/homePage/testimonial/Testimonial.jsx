@@ -9,15 +9,15 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export default function Testimonial() {
   return (
     <section>
-      <div className={styles.rightBox_title}>Témoignage</div>
+      <h4 className={styles.rightBox_title}>Témoignage</h4>
       <div className="container grid grid-column--2">
         <div className={styles.leftBox}>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
         <div className={styles.rightBox}>
-          <div className={styles.rightBox_subtitle}>
+          <h3 className={styles.rightBox_subtitle}>
             ce que nos stagiaires disent de nous
-          </div>
+          </h3>
         </div>
       </div>
     </section>

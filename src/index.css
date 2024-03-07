@@ -230,11 +230,7 @@ body {
 /* ********************************Button******************************** */
 /* ========================================================================= */
 
-
-
-.btn-primary,
-.btn-primary:link,
-.btn-primary:visited {
+.btn-primary {
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
   font-weight: 600;
@@ -275,4 +271,11 @@ body {
 
 .btn-primary:active {
   top: 2px;
+}
+
+.btn-primary a,
+.btn-primary a:visited,
+.btn-primary a:link {
+  text-decoration: none;
+  color: inherit;
 }

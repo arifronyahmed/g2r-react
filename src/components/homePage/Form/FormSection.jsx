@@ -1,53 +1,46 @@
+import { FiNavigation, FiEdit3, FiSmartphone } from "react-icons/fi";
 import styles from "./FormSection.module.css";
-import { FiNavigation } from "react-icons/fi";
-import { FiEdit3 } from "react-icons/fi";
-import { FiSmartphone } from "react-icons/fi";
 import Form from "./Form";
 
 export default function FormSection() {
+  const contactMethods = [
+    {
+      icon: <FiNavigation />,
+      title: "Notre établissement",
+      subtitle: "102 Av. Philippe Auguste, 75011 Paris",
+    },
+    {
+      icon: <FiEdit3 />,
+      title: "Renseignements Généraux",
+      subtitle: "sales@domain.com",
+    },
+    {
+      icon: <FiSmartphone />,
+      title: "Passer un appel téléphonique",
+      subtitle: "01 44 64 85 85",
+    },
+  ];
+
   return (
     <div>
       <div className="container">
-        <div className={styles.title}>Pour nous trouver</div>
-        <div className={styles.subtitle}>
+        <h4 className={styles.title}>Pour nous trouver</h4>
+        <p className={styles.subtitle}>
           Vous avez un projet dont vous aimeriez discuter avec nous ?
           Écrivez-nous ci-dessous, nous serions ravis de parler.
-        </div>
+        </p>
 
-        {/* *************************************** */}
         <div className="grid grid-column--2 grid-gap--hsm">
           <div className="grid grid-row--3 grid-gap--vsm">
-            <div className={styles.leftBox_item}>
-              <div className={styles.icon}>
-                <FiNavigation />
-              </div>
-              <div>
-                <div className={styles.item_title}>Notre établissement</div>
-                <div className={styles.item_subtitle}>
-                  102 Av. Philippe Auguste, 75011 Paris
+            {contactMethods.map((method, index) => (
+              <address key={index} className={styles.leftBox_item}>
+                <div className={styles.icon}>{method.icon}</div>
+                <div>
+                  <div className={styles.item_title}>{method.title}</div>
+                  <div className={styles.item_subtitle}>{method.subtitle}</div>
                 </div>
-              </div>
-            </div>
-            <div className={styles.leftBox_item}>
-              <div className={styles.icon}>
-                <FiEdit3 />
-              </div>
-              <div>
-                <div className={styles.item_title}>Renseignements Généraux</div>
-                <div className={styles.item_subtitle}>sales@domain.com</div>
-              </div>
-            </div>
-            <div className={styles.leftBox_item}>
-              <div className={styles.icon}>
-                <FiSmartphone />
-              </div>
-              <div>
-                <div className={styles.item_title}>
-                  Passer un appel téléphonique
-                </div>
-                <div className={styles.item_subtitle}>01 44 64 85 85</div>
-              </div>
-            </div>
+              </address>
+            ))}
           </div>
           <div>
             <Form />

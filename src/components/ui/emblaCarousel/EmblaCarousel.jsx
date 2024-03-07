@@ -37,20 +37,24 @@ const EmblaCarousel = (props) => {
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__item">
-                <div>
+                <figure>
                   <img
                     src="testimonial/christopher-campbell-rDEOVtE7vOs-unsplash.webp"
                     alt=""
                     className="embla__slide__itemImage"
                   />
-                </div>
-                <div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                  cumque a, aliquid vitae ut eligendi ipsum fuga esse impedit
-                  molestiae, quaerat rem perferendis sequi, aliquam reiciendis
-                  qui dignissimos animi! Ratione?
-                </div>
-                <div className="embla__slide__itemAuthor">Arif Ahmed rony</div>
+                </figure>
+                <blockquote>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error cumque a, aliquid vitae ut eligendi ipsum fuga esse
+                    impedit molestiae, quaerat rem perferendis sequi, aliquam
+                    reiciendis qui dignissimos animi! Ratione?
+                  </p>
+                </blockquote>
+                <cite className="embla__slide__itemAuthor">
+                  Arif Ahmed rony
+                </cite>
               </div>
             </div>
           ))}

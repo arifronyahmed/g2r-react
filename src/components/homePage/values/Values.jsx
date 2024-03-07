@@ -5,8 +5,9 @@ import {
   FaSignal,
 } from "react-icons/fa";
 import styles from "./Values.module.css";
+import Card from "../../ui/Card";
 
-const data = [
+const values = [
   {
     icon: <FaPeopleCarry />,
     title: "Valorisation de votre parcours",
@@ -33,12 +34,12 @@ export default function Values() {
   return (
     <section className={styles.values}>
       <div className="container grid grid-column--4">
-        {data.map((item, index) => (
-          <div key={index} className={styles.card}>
+        {values.map((item, index) => (
+          <Card key={index} className={styles.card}>
             <div className={styles.icon}>{item.icon}</div>
-            <div className={styles.title}>{item.title}</div>
+            <h3 className={styles.title}>{item.title}</h3>
             <p className={styles.text}>{item.text}</p>
-          </div>
+          </Card>
         ))}
       </div>
     </section>
